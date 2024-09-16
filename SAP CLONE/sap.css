@@ -1,0 +1,364 @@
+* { 
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   font-family: lato;
+}
+.landing-zone {
+    height: 60px;
+    background-color: #fafafa;
+    width: 100%;
+    position: relative;
+    top: 0;
+    overflow-y: hidden;
+   
+}
+.sapslogo {
+    position: absolute;
+    width: 100%;
+    height: 58%;
+    top: 20%;
+    object-fit: contain;
+    margin-left: -42%;
+}
+.main-navigation {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    margin-left: 9%;
+    overflow-y: hidden;
+}
+
+.navul {
+    list-style: none;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    gap: 2.5%;
+
+}
+.navul > li {
+   font-size: 91%;
+   cursor: pointer;
+   font-family: inherit;
+}
+.navul > li:hover {
+    color: rgb(0, 110, 255);
+}
+.explore {
+    width: 16%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 90%;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 10%;
+    position: absolute;
+    left: 70%;
+}
+.explore > p:hover {
+    color: rgb(0, 110, 255);
+}
+
+.bi-search, .bi-person, .bi-globe {
+    font-size: 1.2rem;
+}
+.bi-search:hover, .bi-person:hover, .bi-globe:hover {
+    color: rgb(0, 110, 255);
+}
+.background-image {
+    background-image: url(https://www.sap.com/dam/application/shared/photos/homepage/300029-sap-ai-hp.jpg/_jcr_content/renditions/300029-sap-ai-hp_homepage_1599_0686.jpg.adapt.3198_1372.false.false.false.false.jpg/1719424948295.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 680px;
+    min-height: 680px;
+    display: flex;
+}
+.hero-div {
+    margin: 220px auto 0 70px;
+    width: 60%;
+    height: 60%;
+}
+.hero-text > p {
+    font-size: 2.2rem;
+    height: 25%;
+    margin-top: -10px;
+    width: 80%;
+}
+.hero-text > h1 {
+    font-size: 3.5rem;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    margin-top: -5px;
+    overflow: hidden;
+}
+.learnbutton {
+    width: 20%;
+    height: 80px;
+    margin-top: -1.5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.learn {
+    width: 75%;
+    height: 60%;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: -2px 0;
+    cursor: pointer;
+}
+.learn:hover {
+    background-color: darkblue;
+    transition: 0.4s ease;
+}
+.line {
+    width: 24%;
+    height: 60px;
+}
+.small-vertical {
+    top: 35%;
+    width: 1.5%;
+    height: 35%;
+    background-color: black;
+    position: absolute;
+}
+.b4grid {
+  width: 100vw;
+  height: 180px;
+  display: flex;  
+  justify-content: space-between; 
+}
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    gap: 1%;
+    position: relative;
+    width: 22%;
+    top: 20%;
+}
+.services > p {
+    margin-left: -20%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.view {
+    display: flex;
+    align-items: self-end;
+    margin-right: 6%;
+    width: 14%;
+    height: 120px;
+    left: 20%;
+}
+.viewbut {
+    height: 50px;
+    width: 98%;
+    max-width: 98%;
+    border-radius: 10px;
+    border: 1.5px solid grey;
+    font-size: 100%;
+    font-weight: 600;
+    color: rgb(0, 83, 139);
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.viewbut:hover {
+    transition: 0.2s ease;
+    background-color: #f3faff;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    grid-template-rows: repeat(4, 230px);
+    padding-bottom: 12%;
+    justify-content: center;
+    gap: 5%;
+    overflow-y: hidden;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    border-top: 0.1px solid #ededed;
+    box-shadow:  0 5px 2px lightgrey;
+    padding: 20px;
+    font-size: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+  }
+  .grid-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 -4px 10px rgba(0, 0, 0, 0);
+  }
+  .embed {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    top: 0;
+    letter-spacing: 0.5px;
+    
+  }
+  .embed > h5 {
+    
+    font-size: 1.3rem;
+    height: 128px;
+    overflow-y: hidden;
+    margin-top: 1%;
+  }
+  .embed > p {
+    font-size: 15.8px;
+    margin-top: -10%;
+    height:100%;
+    overflow-y: hidden;
+    width:95%;
+    
+  }
+  .embed > .link {
+    margin-top: -3%;
+    height: 100px;
+    overflow-y: hidden;
+    font-size: 17px;
+  }
+.embed > .link > a {
+    text-decoration: none;
+    color: rgb(105, 100, 215);
+}
+.link > a:hover {
+    text-decoration: underline;
+    color: rgb(35, 90, 215);
+}
+.bi-chevron-right {
+    font-size: 14px;
+    margin-left: 1%;
+    color: rgb(105, 100, 215);;
+}
+.word-card {
+    width: 100%;
+    margin-top: 2%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wordcard-div {
+    width: 95%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.wordcard-div > h2 {
+    position: absolute;
+    font-size: 2rem;
+}
+.word {
+   width: 38%;
+    height: 85%;
+    background-color: white;
+}
+.comp {
+    width: 70%;
+   
+    margin-left: -9%;
+    margin-right: 17%;
+}
+.card {
+    width: 62%;
+    height: 85%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -3%;
+}
+.aftergrid {
+    width: 28%;
+    height: 14%;
+    display: flex;
+}
+.aftergrid > p {
+    font-size: 16px;
+    margin-top: 5%;
+   
+    width: 100%;
+}
+.line2 {
+    width: 20%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+.small-vertical2 {
+    width:  20%;
+    height: 60%;
+    background-color: black;
+}
+.cloud {
+   font-size: 1.0rem;
+}
+.market {
+    margin-top: -4%;
+    font-size: 1.1rem;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.clouderp {
+    width: 70%;
+}
+.erp {
+    width: 62%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(0, 81, 255);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.erp:hover {
+    background-color: darkblue;
+    transition: 0.2s ease;
+}
+.imgcard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+#sapcard {
+    width: 95%;
+    height: 88%;
+}
