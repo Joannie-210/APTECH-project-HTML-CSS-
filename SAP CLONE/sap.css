@@ -2,16 +2,16 @@
     box-sizing: border-box;
     overflow-x: hidden;
 }
-body {
+body, html {
    margin: 0;
    padding: 0;
-   width: 100%;
-   font-family: lato;
+   width: 100vw;
+   overflow-x: hidden;
 }
 .landing-zone {
     height: 60px;
     background-color: #fafafa;
-    width: 100%;
+    width: 100vw;
     position: relative;
     top: 0;
     overflow-y: hidden;
@@ -30,7 +30,7 @@ body {
     height: 60px;
     align-items: center;
     margin: auto;
-    width: 80%;
+    width: 100vw;
     margin-left: 9%;
     overflow-y: hidden;
 }
@@ -42,7 +42,7 @@ body {
     justify-content: flex-start;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 60px;
     gap: 2.5%;
 
@@ -78,33 +78,37 @@ body {
     color: rgb(0, 110, 255);
 }
 .background-image {
-    background-image: url(https://www.sap.com/dam/application/shared/photos/homepage/300029-sap-ai-hp.jpg/_jcr_content/renditions/300029-sap-ai-hp_homepage_1599_0686.jpg.adapt.3198_1372.false.false.false.false.jpg/1719424948295.jpg);
+    background-image: url(https://www.sap.com/dam/application/shared/photos/homepage/297084-sap-teched-hp.jpg/_jcr_content/renditions/297084-sap-teched-hp_homepage_1920_0686.jpg.adapt.1920_686.false.false.false.false.jpg/1723740178509.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 680px;
     min-height: 680px;
     display: flex;
 }
 .hero-div {
-    margin: 220px auto 0 70px;
+    margin: 150px auto 0 70px;
     width: 60%;
-    height: 60%;
+    height: 80%;
 }
 .hero-text > p {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     height: 25%;
-    margin-top: -10px;
-    width: 80%;
+    margin-top: -25px;
+    width: 65%;
+    font-weight: 200;
 }
 .hero-text > h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
+    width: 80%;
     height: 10%;
     display: flex;
     align-items: center;
     margin-top: -5px;
     overflow: hidden;
+    font-weight: bold;
+
 }
 .learnbutton {
     width: 20%;
@@ -115,11 +119,11 @@ body {
     align-items: center;
 }
 .learn {
-    width: 75%;
-    height: 60%;
+    width: 80%;
+    height: 50%;
     background-color: rgb(0, 110, 255);
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     border: none;
     border-radius: 8px;
     font-weight: bold;
@@ -193,7 +197,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 570px 570px;
-    grid-template-rows: repeat(4, 230px);
+    grid-template-rows: repeat(4, 220px);
     padding-bottom: 12%;
     justify-content: center;
     gap: 5%;
@@ -219,32 +223,29 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     text-align: left;
     top: 0;
     letter-spacing: 0.5px;
-    
   }
   .embed > h5 {
     
     font-size: 1.3rem;
-    height: 128px;
     overflow-y: hidden;
     margin-top: 1%;
   }
   .embed > p {
-    font-size: 15.8px;
-    margin-top: -10%;
-    height:100%;
+    font-size: 1.2rem;
+    margin-top: -2%;
     overflow-y: hidden;
     width:95%;
     
   }
   .embed > .link {
     margin-top: -3%;
-    height: 100px;
     overflow-y: hidden;
-    font-size: 17px;
+    font-size: 1.2rem;
   }
 .embed > .link > a {
     text-decoration: none;
@@ -259,70 +260,47 @@ body {
     margin-left: 1%;
     color: rgb(105, 100, 215);;
 }
-.word-card {
-    width: 100%;
-    margin-top: 2%;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.wordcard-div {
-    width: 95%;
-    height: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-}
-.wordcard-div > h2 {
-    position: absolute;
-    font-size: 2rem;
-}
-.word {
-   width: 38%;
-    height: 85%;
-    background-color: white;
-}
+
 .comp {
-    width: 70%;
-   
-    margin-left: -9%;
-    margin-right: 17%;
-}
-.card {
-    width: 62%;
-    height: 85%;
-    background-color: white;
+    width: 90%;
+    max-width: 1200px;
+    margin: 4% auto 0 auto;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-right: -3%;
+    height: 120px;
 }
+.comp > h2 {
+    
+    font-size: 2.1rem;
+}
+
 .aftergrid {
-    width: 28%;
-    height: 14%;
+    margin-top: 1%;
+    width: 70%;
+    height: 70px;
     display: flex;
+    gap: 3%;
+   margin-left: -12%;
 }
 .aftergrid > p {
     font-size: 16px;
     margin-top: 5%;
-   
-    width: 100%;
+    width: 71%;
+    height: 20px;
 }
 .line2 {
-    width: 20%;
-    height: 90%;
+    width: 2.5%;
+    height: 70%;
     display: flex;
     justify-content: center;
+    margin-left: 18%;
 }
 .small-vertical2 {
-    width:  20%;
-    height: 60%;
+    width:  50%;
+    height: 90%;
     background-color: black;
 }
-.cloud {
+/* .cloud {
    font-size: 1.0rem;
 }
 .market {
@@ -331,23 +309,25 @@ body {
     width: 95%;
     display: flex;
     flex-wrap: wrap;
-}
+}*/
 .clouderp {
-    width: 70%;
+    width: 40%;
+    position: absolute;
 }
 .erp {
-    width: 62%;
+
+    width: 44%;
     height: 45px;
     border-radius: 10px;
     border: none;
-    background-color: rgb(0, 81, 255);
+    background-color: rgb(0, 110, 255);
     color: white;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
 }
 .erp:hover {
-    background-color: darkblue;
+    background-color: rgb(0, 56, 139);
     transition: 0.2s ease;
 }
 .imgcard {
@@ -359,6 +339,130 @@ body {
    
 }
 #sapcard {
+    width: 100%;
+    height: 100%;
+    margin-left: 2%;
+}
+.grid-container2 {
+    display: grid;
+    grid-template-columns:  520px 700px;
+   grid-template-rows: auto auto;
+    justify-content: center;
+    
+}
+.cloud {
     width: 95%;
-    height: 88%;
+    height: 220px;
+    padding: 0 0.5%;
+    margin-left: -5%;
+    position: relative;
+}
+.sol {
+    font-size: 1.3rem;
+    width:550px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.sol > h2 {
+    margin-left: 4%;
+}
+.box2 {
+    width: 1050px;
+    border: 0.2px solid #fefefe;
+    height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.box1 {
+    width: 100%;
+    width: 100%;
+    margin-left: 4%;
+    
+}
+.market {
+    margin-top: -5%;
+   width: 450px;
+    margin-left: 5%;
+}
+.market > h5 {
+    font-size: 1.2rem;
+}
+.aftersecgrid {
+    width: 31%;
+    height: 90px;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+.aftersecgrid > p {
+    font-size: 1.1rem;
+}
+.line3 {
+    width: 20%;
+    height: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+.small-vertical3 {
+    background-color: black;
+    height: 80%;
+    width: 5%;
+
+}
+.grid-container3 {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    grid-template-rows: repeat(2, 460px);
+    justify-content: center;
+    margin-top: 3%;
+    gap: 3%;
+}
+.grid-square {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    border-top: 0.1px solid #ededed;
+    box-shadow:  0 5px 2px lightgrey;
+  font-size: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.grid-square > h4 {
+    font-size: 1.4rem;
+}
+#squaregridimg {
+    width: auto;
+    height: 50%;
+    object-fit: cover;
+}
+hr {
+    margin-top: -2%;
+    width: 93%;
+    height: 0.2px;
+    background-color: lightgrey;
+    border: 0;
+}
+.grid-square > p {
+    padding: 0 0.9rem;
+    font-size: 1.2rem;
+    text-align: left;
+}
+.grid-square > .link2 {
+    text-align: left;
+    font-size: 1.1rem;
+    padding: 0 0.9rem;
+    text-decoration: none;
+    color: rgb(105, 100, 215);
+}
+.grid-square > .link2:hover {
+    text-decoration: underline;
+    color: rgb(35, 90, 215);
+}
+.grid-square:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 -4px 10px rgba(0, 0, 0, 0);
 }
