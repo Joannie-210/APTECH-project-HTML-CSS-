@@ -1,0 +1,1120 @@
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+  font-family: Queens;
+  src: url(https://fonts.ninja/font/Kilotype-Queens-273381);
+}
+:root {
+  --background: #fef4ea;
+  --gencolor: #ffeade;
+  --button: #ff5e35;
+  --buttonhover:  #e04826;
+  --buttonborder: #ff5e35;
+  --button2hover:var(--gencolor)
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  color: #213343;
+  overflow-x: hidden;
+  position: sticky;
+  top: 100%;
+}
+a {
+  text-decoration: none;
+}
+.chat-box {
+  width: 60px;
+  height: 60px;
+  padding: 4px;
+  background-color: #3e5974;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  position: fixed;
+  z-index: 2;
+}
+.wrapper {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  position: relative;
+}
+.utility {
+  display: flex;
+  justify-content: space-between;
+}
+.utility-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  padding-left: 10.5%;
+  max-width: 1500px;
+}
+.utility-menu {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  position: relative;
+}
+.utility-menu > li {
+  font-size: 0.85rem;
+  font-family: "Lexend Deca";
+} 
+.utility-menu > li > a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  max-width: 1000px;
+}
+.u-icon-text {
+   position: absolute;
+   margin-right: 30px;
+}
+.utility-cta {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  padding: 0 15px;
+  width: 50%;
+}
+.utility-cta > a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.85rem;
+  height: 50%;
+  font-family: "Lexend Deca";
+}
+  .navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 2%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    z-index: 999;
+  }
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    position: relative;
+  }
+  .navbar-logo img {
+    height: 72px;
+    width: 40%;
+  }
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 12%;
+    width: 40%;
+  }
+   .navbar-links li {
+    display: inline-block;
+    font-size: 1rem;
+    color: #213343;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    font-family: Lexend Deca;
+  }
+  .bilink {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  .navbar-links a:hover {
+    color: #5fa3d4;
+  }
+
+  .navbar-cta, .utility-cta {
+    width:30%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  .navbar-cta {
+    margin-left: 5%;
+    display: flex;
+    justify-content: flex-end;
+    font-family: "Lexend Deca";
+  }
+  .navbar-btn {
+    background-color: #ff5e35;
+    color: #ffffff;
+    width: 35%;
+    height: 45px;
+    padding: 3% 1%;
+    border-radius: 10px;
+    border: 0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  .navbar-btn2 {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ff5e35;
+    padding: 3% 3%;
+    height: 45px;
+    width: 45%;
+    background-color: white;
+    color: #ff5e35;
+
+  }
+  .navbar-btn, .navbar-btn2 {
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Lexend Deca;
+  }
+   .navbar-btn2:hover {
+    background-color: #ffe9f5;
+    border: 2px solid var(--buttonhover);
+   }
+  .navbar-btn:hover {
+    background-color: #e04826;
+  }
+  
+  .navbar-login {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+  }
+  
+  .navbar-login:hover {
+    color: #005bb5;
+  }
+  .fall {
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .spot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    height: 80%;
+    font-size: 0.8rem;
+  }
+  .learn {
+    width: 15%;
+    height: 40px;
+    background-color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  .background {
+     background-color: var(--background);
+     width: 100%;
+     height: 650px;
+     position: relative;
+     display: flex;
+     justify-content: center;
+     background-position: center center;
+     background-size: cover;
+     background-attachment: scroll;
+  }
+  .hero-img {
+    position: absolute;
+    margin-top: 1%;
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    display: flex;
+    gap: 6%;
+  }
+  .hero-text {
+    margin-top: 6%;
+    width: 85%;
+    height: 100%;
+    padding-left: 8%;
+  }
+  .back-img-div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    padding-left: 1%;
+  }
+  #firstimg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding-left: 5%;
+    margin-top: -2%;
+  }
+  .hero-text h1 {
+    font-size: 3.8rem;
+    height: 25%;
+    display: flex;
+   }
+  .hero-text h5 {
+    font-family: Lexend Deca;
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 100%;
+    height: 30px;
+    margin-top: 1%;
+    margin-left: 1%;
+    display: flex;
+    align-items: end;
+  }
+ .hero-text p:first-of-type {
+    font-size: 0.92rem;
+    width: 100%;
+    height: 90px;
+    line-height: 1.6rem;
+    font-family: Lexend Deca;
+  }
+.hero-button {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 4%;
+}
+  .hero-demo {
+     width: 40%;
+     color: white;
+     height: 85%;
+     font-size: 1.2rem;
+     border-radius: 10px;
+     border: none;
+     font-weight: bold;
+     background-color: var(--button);
+  }
+  .hero-demo:hover {
+    background-color: var(--buttonhover);
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  .hero-free {
+    width: 45%;
+    height: 85%;
+    background-color: white;
+    border: 2px solid var(--buttonborder);
+    border-radius: 10px;
+    color: var(--button);
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+.hero-free:hover {
+  background-color: var(--button2hover);
+  border: 2px solid var(--buttonhover);
+}
+.button-text {
+  margin-top: 1%;
+  font-size: 0.85rem;
+  font-family: Lexend Deca;
+}
+.second-div {
+  width: 100%;
+  height: 250px;
+}
+.second-div h3 {
+  background-color: white;
+  height: 45%;
+  font-family: Lexend Deca;
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vid-background {
+  width: 100%;
+  height:  450px;
+  background-color: #f6f9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.vidtext-div {
+  width: 82%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  gap: 2.5%;
+  position: relative;
+} 
+.drive {
+  width: 52%;
+  height: 75%;
+}
+.drive h2 {
+  font-size: 2rem;
+  width: 80%;
+  height: 45%;
+  margin-top: 2%;
+  font-weight: 500;
+  font-family: Lexend Deca;
+}
+.drive > .drive-para {
+  font-size: 0.96rem;
+  width: 100%;
+  height: 40%;
+  margin-top: -4%;
+  font-family: Lexend Deca;
+  font-weight: 300;
+}
+.drive-button {
+  width: 60%;
+  height: 37%;
+  display: flex;
+  align-items: center;
+  gap: 6%;
+  margin-top: -7%;
+}
+.demo, .learn-more {
+  height: 50%;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Lexend Deca;
+}
+.demo {
+  width: 50%;
+  border: none;
+  background-color: var(--button);
+  color: white;
+}
+.demo:hover {
+  background-color: var(--buttonhover);
+  transition: 0.4s ease;
+}
+.learn-more {
+  width: 55%;
+  border: 2px solid var(--button);
+  color: var(--button);
+  background-color: white;
+}
+.learn-more:hover {
+  background-color: #ffe9f5;
+  border: 2px solid var(--buttonhover);
+}
+.drive-button > button:first-of-type > a {
+  color: white;
+  }
+  .drive-button > button:last-of-type > a {
+    color: var(--button);
+  }
+.play-button-div {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--button);
+  opacity: 0.8;
+  height: 15%;
+  width: 5%;
+  left: 20.5%;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.play-button-div:hover {
+  opacity: 1;
+  background-color: var(--buttonhover);
+  transition: 0.7s ease-in-out;
+}
+.bi-play-fill {
+  font-size: 2.1rem;
+  color: white;
+}
+.frontoffice {
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+.frontoffice div:first-child {
+  width: 80%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.frontofficeimg {
+  width: 80%;
+  margin-top: 3%;
+  height: 80%;
+}
+.frontoffice > h2 {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  font-size: 2.2rem;
+  font-family: Lexend Deca;
+}
+.frontoffice > p {
+  width: 75%;
+  font-family: Lexend Deca;
+  font-weight: 300;
+}
+.frontoff-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  width: 35%;
+  height: 120px;
+  margin-bottom: 3%;
+}
+.frontoff-btn > button:first-child {
+  width: 30%;
+  height: 45%;
+  border-radius: 10px;
+  border: 0;
+  font-size: 1rem;
+  font-family: Lexend Deca;
+  color: white;
+  background-color: var(--button);
+  font-weight: bold;
+  cursor: pointer;
+}
+.frontoff-btn > button:first-child:hover {
+  background-color: var(--buttonhover);
+  transition: 0.4s ease;
+}
+.frontoff-btn > button:last-child {
+  width: 35%;
+  height: 45%;
+  border-radius: 10px;
+  border: 2px solid var(--button);
+  font-size: 1rem;
+  font-family: Lexend Deca;
+  color: var(--button);
+  background-color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.frontoff-btn > button:last-child:hover {
+  background-color: var(--button2hover);
+  border:  2px solid var(--buttonhover);
+  transition: 0.4s ease;
+}
+.first-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  background-color: var(--background);
+  width: 100%;
+  height: auto;
+  padding: 0 10% 5% 10%;
+  gap: 20px;
+}
+.grid-item {
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 30px 0 30px;
+  border-radius: 5px;
+}
+.item7 {
+  grid-row: 3;
+  grid-column: 1 / 4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 5%;
+  height: auto;
+  padding:  60px 50px 35px 50px;
+}
+.grid-header {
+  display: flex;
+  width: 100%;
+  height: auto;
+  gap: 10px;
+  text-align: left;
+}
+.grid-header h3 {
+  font-size: 1.4rem;
+  font-family: Lexend Deca;
+  font-weight: 500;
+ 
+}
+#grid-img {
+  width: 30px;
+  height: 30px;
+}
+sup {
+  font-size: 0.7rem;
+}
+.grid-item > p:first-of-type {
+  text-align: left;
+  margin-top: 3.0%;
+  font-size: 0.9rem;
+  font-family: Lexend Deca;
+  width: 100%;
+  height: 90px;
+  border-bottom: 1px solid  #7691ad;
+  font-weight: 300;
+}
+.grid-item > p:nth-of-type(2) {
+  margin-top: 3%;
+  font-family: Lexend Deca;
+  font-size: 1rem;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.grid-item:hover {
+  transition: 0.4s ease;
+  background-color: #dbe6ed;
+  transform: scale(1.025);
+}
+.bi-check-circle-fill {
+  color: var(--button);
+  font-size: 1.2rem;
+}
+.feats {
+  width: 100%;
+  display: flex;
+  gap: 5%;
+  align-items: center;
+}
+.feats-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  gap: 8px;
+}
+.feats > p {
+  font-family: Lexend Deca;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.grid-but {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid-but > button {
+  width: 98%;
+  height: 50%;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-family: Lexend Deca;
+  font-weight: 600;
+  color: white;
+  background-color: var(--button);
+  cursor: pointer;
+}
+.grid-but > button:hover {
+  background-color: var(--buttonhover);
+  transition: 1.8s ease;
+}
+.span-grid-text {
+  width: 50%;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+}
+.span-grid-text h2 {
+  font-family: Lexend Deca;
+  height: auto;
+  font-weight: 400;
+}
+.span-grid-text p {
+  font-family: Lexend Deca;
+  padding: 10px 0px 40px 0px;
+  font-weight: 300;
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+}
+.span-grid-text button {
+  width: 100%;
+  height: 60px;
+  background-color: var(--button);
+  color: white;
+  font-size: 1.2rem;
+  font-family: Lexend Deca;
+  border-radius: 8px;
+  border: none;
+}
+.span-grid-text button:hover {
+  background-color: var(--buttonhover);
+  transition: 0.5s ease;
+}
+.span-flex-img {
+  margin-top: -4%;
+  width: 50%;
+  height: auto;
+  padding: 5% auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+#fleximg {
+  width: 60px;
+  height: 60px;
+  margin-left: 20%;
+}
+.flex {
+  display: flex;
+ align-items: center;
+  flex-direction: column;
+  width: 30%;
+  height: 70px;
+  gap: 50px;
+  height: auto;
+  padding: 2% 0;
+}
+.flex-row > p,  .flex-row2 > p{
+  font-family: lexend Deca;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.flex-row {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.flex-row > p > .bi-r-circle {
+  font-size: 0.1rem;
+}
+.breeze {
+  width: 100%;
+  height: 160px;
+  background-color:   #bef1ec;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2%  8% 0% 8%;
+  gap: 3%;
+}
+.breeze-but-div > h2 {
+  height: 120px;
+}
+.breeze-but-div {
+  width: 95%;
+  height: 95%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.but-div {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.but-div > button {
+  margin-top:5%;
+  width: 65%;
+  height: 42%;
+  border: 2px solid var(--button) ;
+  border-radius: 8px;
+  color: var(--button);
+  font-family: Lexend Deca;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: white;
+  cursor: pointer;
+}
+.but-div > button:hover {
+  border: 2px solid var(--buttonhover);
+  background-color: var(--gencolor);
+  transition: 0.5s ease;
+}
+.product {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+}
+.product > h2 {
+  height: 55px;
+  font-size: 1.6rem;
+  font-family: Lexend Deca;
+  font-weight: 500;
+}
+.product > p {
+  font-size: 0.95rem;
+  font-weight: 300;
+  font-family: Lexend Deca;
+}
+.solution {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding: 5% 10% 1.5% 10%;
+}
+.solution > h2 {
+ text-align: center;
+ font-size: 2rem;
+ font-family: lexend deca;
+ font-weight: 600;
+ height: 70px
+}
+.solution > p {
+  width: 100%;
+  font-family: lexend deca;
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 300;
+  height: 80px;
+}
+.sol-flex {
+  width: 100%;
+  height: 680px;
+  gap: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2% 1%;
+}
+.card {
+  width: 32%;
+  height: 98%;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 -4px 10px rgba(0, 0, 0, 0);
+  background-color: #fefefe;
+  position: relative;
+}
+#pics {
+  width: 100%;
+  height: 45%;
+}
+.card-text {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8% 5%;
+}
+.card-text > p:first-of-type {
+  height: 60px;
+  font-family: lexend deca;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.card-text > p:last-of-type {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  font-family: lexend deca;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+.card-but {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 120px;
+}
+.card-but > button {
+  width: 60%;
+  height: 45%;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-family: lexend deca;
+  color: white;
+  background-color: var(--button);
+  cursor: pointer;
+}
+.card-but > button:hover {
+  background-color: var(--buttonhover);
+  transition: 0.4s ease;
+}
+.customer-result {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  width: 100%;
+  height: 640px;
+  background-color: #192733;
+  position: relative;
+}
+.customer-result > h3 {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-family: lexend deca;
+}
+.customer-flex {
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 85%;
+  height: 300px;
+  padding: 0.5% 0;
+  gap: 0.5px;
+}
+.achieve {
+  width: 30%;
+  height: 90%;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.achieve > img {
+  margin-top: -5%;
+  width: 50%;
+  height: 50%;
+}
+.achieve > h4 {
+  font-size: 1.5rem;
+  margin-top: 8%;
+  font-family: lexend deca;
+  font-weight: 600;
+}
+.achieve > p {
+  font-size: 1.2rem;
+  margin-top: 4%;
+  font-family: lexend deca;
+  font-weight: 300;
+}
+.customer-result > h5 {
+  color: white;
+  text-align: center;
+  margin-top: 4%;
+  font-family: lexend deca;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.roi-but {
+  position: absolute;
+ left: 30%;
+ height: 90px;
+ width: 40%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+} 
+.roi-but > button {
+  width: 31%;
+  height: 60%;
+  background-color: white;
+  color: inherit;
+  border: 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: lexend deca;
+  cursor: pointer;
+}
+.roi-but > button:hover {
+  background-color: #b6c7d6;
+  transition: 0.4s ease;
+}
+.connect {
+  background-color:#f6f9fc;
+  width: 100%;
+  height: 670px;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+.connect-flex {
+  width: 85%;
+  height: 88%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 6.05%;
+}
+.connect-card {
+  width: 45%;
+  height: 96%;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 4%;
+  box-shadow: 0px 0px 1px 1px lightgrey;
+}
+#app {
+  width: 70px;
+  height: 70px;
+}
+.app-4 {
+  width: 98%;
+  height: 130px;
+  margin-top: 8%;
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.app-2 {
+  width: 50%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 120px;
+}
+.connect-card > h2 {
+  font-family: lexend deca;
+  font-weight: 550;
+  height: 70px;
+}
+.connect-card > a {
+  font-family: lexend deca;
+  font-size: 1rem;
+}
+.connect2-flex {
+  width: 90%;
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 370px;
+  padding: 40px 25px 80px 25px;
+  gap: 40px;
+}
+#app-badge {
+  width:  80px;
+  height:  100px;
+}
+.connect-card > a {
+  text-decoration: underline;
+  color: #0068b1;
+}
+.blog {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 4% 4%;
+  display: flex;
+ align-items: center;
+  flex-direction: column;
+}
+.popular-flex {
+  display: flex;
+  width: 95%;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 1%;
+}
+.popular-flex > hr {
+  width: 570px;
+  height: 4px;
+  background-color: #b6c7d6;
+  border-radius: 2px;
+  border: none;
+}
+.popular-flex > h2 {
+  font-size: 2rem;
+  font-family: lexend deca;
+}
+.popular-flex > a {
+  font-family: lexend deca;
+  color: #0068b1;
+  text-decoration: underline;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.blog-post-flex {
+  width: 95%;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 1%;
+ gap: 15px;
+}
+.blog-post-card {
+  width: 270px;
+  max-width: 290px;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  position: relative;
+  flex-direction: column;
+}
+#color-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+}
+ .blog-post-card > p:first-of-type {
+  position: absolute;
+  top: 60%;
+  padding: 1% 0.8%;
+  font-size: 0.9rem;
+  text-align: left;
+  color: #0068b1;
+}
+.blog-post-card > p:nth-of-type(2) {
+  top: 75%;
+  position: absolute;
+}
+.blog-post-card > p:last-of-type {
+  top: 85%;
+  position: absolute;
+}
+.blog-post-card > p {
+  font-family: lexend deca;
+} 
