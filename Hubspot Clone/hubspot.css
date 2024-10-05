@@ -24,8 +24,7 @@ body, html {
   height: 100%;
   min-height: 100vh;
   color: #213343;
-  overflow-x: hidden;
-  position: sticky;
+  overflow-x: hidden;
   top: 100%;
 }
 a {
