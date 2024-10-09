@@ -1,0 +1,350 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --free-btn: #0582ff;
+    --demo-btn: #ebf5fe;
+    --free-btn-hover: #045ac3;
+    --demo-btn-hover: #d6e1f5;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: inter;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+.nav-links > svg{
+    width: 50%;
+    height:50%;
+    position: absolute;
+    margin-right: 84%;
+}
+nav {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.5px solid #efefef;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    z-index: 2;
+}
+.navbar-cont {
+    width: 98%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-links {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bi-chevron-down {
+    font-size: 0.4rem;
+    font-weight: bold;
+}
+.nav-links > .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 70%;
+    height: 80%;
+    gap: 25px;
+    margin-left: 13%;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.nav-links > .links > li {
+    cursor: pointer;
+}
+li { 
+   list-style: none;
+   /* animation-name: joan;
+   animation-timeline: scroll(); */
+}
+
+.link-icon{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 5px;
+}
+.link-icon img {
+    width: 10px;
+    height: 10px;
+}
+.nav-cta {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-cta > .cta {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    gap: 20px;
+   margin-left: 10%;
+   font-size: 0.9rem;
+}
+.line {
+    width: 0.2px;
+    height: 100%;
+    background-color: lightgray;
+}
+.nav-cta > button {
+    width: 35%;
+    height: 60%;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.cta > hr {
+    height: 50%;
+    width: 0.5px;
+}
+.hero-section {
+    width: 100%;
+    margin-top: 50px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-div {
+    width: 100%;
+    height: 80%;
+    padding: 0 7%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.hero-text {
+    width: 65%;
+    height: 90%;
+    background-color: white;
+}
+.hero-text > h1 {
+    font-size: 5.0rem;
+    font-weight: 600;
+    line-height: 4.5rem;
+    height: 160px;
+}
+.hero-text > h2 {
+    font-size: 1.5rem;
+    font-weight: 550;
+    height: 70px;
+}
+.hero-text > p {
+    margin-top: 25px;
+    color: grey;
+}
+.hero-btn {
+    width: 70%;
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+}
+.hero-btn > button:first-of-type {
+    background-color: var(--free-btn);
+    color: white;
+    font-weight: 550;
+    width: 45%;
+    border: none;
+    height: 50px;
+    font-size: 1.0rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hero-btn > button:last-of-type {
+    background-color: var(--demo-btn);
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    color: var(--free-btn);
+    font-size: 1rem;
+    font-weight: 550;
+    cursor: pointer;
+}
+.hero-btn > button:first-of-type:hover {
+    background-color: var(--free-btn-hover);
+    transition: 0.4s ease-out;
+}
+.hero-btn > button:last-of-type:hover {
+    background-color: var(--demo-btn-hover);
+    transition: 0.4s ease-out;
+}
+.teams {
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    position: relative;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.teams > img {
+    position: absolute;
+    width: 20%; 
+    height: 80%;
+}
+#affirm, #toyota, #discord, #figma {
+    width: 90px;
+    height: 90px;
+
+}
+.hero-img-vid {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-vid {
+    width: 100%;
+    height: 1000px;
+}
+.img-slide {
+    width: 90%;
+    height: 700px;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: auto;
+   padding: 0 15px;
+   margin-bottom: 20px;
+}
+#main-img {
+    width: 100%;
+    height: 700px;
+    border-radius: 1%;
+    border: 0.5px solid lightgrey;
+}
+.bookOpen {
+    width: 22px;
+    height: 22px;
+}
+.first-icon-div {
+    width: 60%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4%;
+}
+.iconflex {
+    width: auto;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid lightgrey;
+    gap: 5px;
+    border-radius: 7px;
+    padding: 0 10px;
+    position: relative;
+}
+.iconflex > div:first-of-type {
+    display: flex;
+    align-items: center;
+}
+.iconflex p {
+    font-size: 0.88rem;
+}
+.build {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.build-box-div {
+    width: 87%;
+    height: 50%;
+    margin-top: 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+}
+.build-box {
+    width: 45%;
+    height: 100%;
+    
+}
+.build-box > h2 {
+    font-size: 3.8rem;
+    line-height: 4rem;
+}
+.build-box > p {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+  font-weight: 550;
+  font-size: 1.18rem;
+}
+.feat {
+  width: 54%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.build-box > a{
+  font-size: 1.15rem;
+  font-weight: 600;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+ color:  #0a85d1;
+ text-decoration: none;
+}
+.build-box > a:hover {
+    text-decoration: underline;
+    color: #076097;
+}
+.vid-icon-div {
+    width: 30%;
+    display: flex;
+    margin-top: 6%;
+    flex-direction: column;
+}
+.icon-vid {
+    width: 50%;
+    height: 50%;
+}
+.frame {
+    object-fit: contain;
+}
+.vid-icon-div > p {
+    font-size: 1rem;
+    color: grey;
+    font-weight: 500;
+    width: 90%;
+}
+.vid-icon-div > h3 {
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
