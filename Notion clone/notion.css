@@ -270,15 +270,15 @@ li {
 }
 .build {
     width: 100%;
-    height: 450px;
+    height: 370px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .build-box-div {
-    width: 87%;
-    height: 50%;
-    margin-top: 8%;
+    width: 88%;
+    height: 70%;
+    margin-top: 6.5%;
     display: flex;
     justify-content: space-between;
     gap: 3%;
@@ -286,7 +286,10 @@ li {
 .build-box {
     width: 45%;
     height: 100%;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .build-box > h2 {
     font-size: 3.8rem;
@@ -299,13 +302,14 @@ li {
   align-items: center;
   color: grey;
   font-weight: 550;
-  font-size: 1.18rem;
+  font-size: 1.16rem;
 }
 .feat {
   width: 54%;
   height: 100%;
   display: flex;
   justify-content: space-evenly;
+   padding-left: 30px;
 }
 .build-box > a{
   font-size: 1.15rem;
@@ -314,8 +318,9 @@ li {
   display: flex;
   align-items: center;
   gap: 10px;
- color:  #0a85d1;
- text-decoration: none;
+  color:  #0a85d1;
+  text-decoration: none;
+  width: 100%;
 }
 .build-box > a:hover {
     text-decoration: underline;
@@ -324,15 +329,19 @@ li {
 .vid-icon-div {
     width: 30%;
     display: flex;
-    margin-top: 6%;
+    justify-content: center;
     flex-direction: column;
+    margin-top: 8%;
 }
 .icon-vid {
-    width: 50%;
-    height: 50%;
-}
-.frame {
+    width: 40%;
+    height: 40%;
     object-fit: contain;
+    margin-top: 5%;
+    margin-bottom: -3%;
+}
+.frame2 {
+    margin-top: -5%;
 }
 .vid-icon-div > p {
     font-size: 1rem;
@@ -344,7 +353,188 @@ li {
     font-size: 1rem;
     text-align: left;
     width: 100%;
-    height: 35px;
+    height: 28px;
     display: flex;
     align-items: center;
+}
+.screen {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -1% auto;
+}
+.screen-mobile {
+    width: 88%;
+    height: 95%;
+    border-radius: 10px;
+}
+.sec-icon-div {
+    width: 39%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.sec-icon-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    width: auto;
+    color: grey;
+}
+.sec-icon-img {
+    width: 25px;
+    height: 25px;
+}
+.second {
+    padding-left: 5%;
+}
+.workflow {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+.workflow-icon-flex {
+    width: 88%;
+    height: 80%;
+    margin-top: 5.5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+}
+.workflow-text {
+    width: 45%;
+    height: 100;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.workflow-text h2 {
+    font-size: 3.8rem;
+    line-height: 4rem;
+    margin-top: 8%;
+}
+.workflow-text p {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-weight: 550;
+    font-size: 1.16rem;
+}
+.workflow-text a {
+    width: 100%;
+    font-size: 1.15rem;
+    font-weight: 600;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color:  #0a85d1;
+    text-decoration: none;
+}
+.workflow-text a:hover {
+    text-decoration: underline;
+    color: #076097;
+}
+.workflow-icon-div {
+    width: 54%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 30px;
+}
+.vid2 {
+    margin-top: 15%;
+}
+.vid3 {
+    margin-top: 2%;
+}
+.roadmap {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#roadmap-pic {
+    width: 88%;
+    height: 95%;
+    margin: -2% auto 0 auto;
+    border-radius: 10px;
+}
+.find {
+    width: 100%;
+    height: 470px;
+    display: flex;
+    justify-content: center; 
+}
+.find-icon-flex {
+    width: 88%;
+    height: 70%;
+    margin-top: 9%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+}
+.find-text {
+    width: 47%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.find-text h2 {
+    margin-top: 10%;
+    font-size: 3.8rem;
+    line-height: 4rem;
+}
+.find-text p {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-weight: 500;
+    font-size: 1.16rem;
+    width: 100%;
+}
+.find-text a {
+    width: 100%;
+    font-size: 1.15rem;
+    font-weight: 600;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color:  #0a85d1;
+    text-decoration: none;
+}
+.find-text a:hover {
+    text-decoration: underline;
+    color: #076097;
+}
+.find-icon-div {
+    width: 54%;
+    height: 100%;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.vid4, .vid5, .vid6 {
+    margin-top: 50%;
+}
+.vid6 {
+    margin-top: 35%;
+}
+.vid5{
+    margin-top: 38%;
 }
