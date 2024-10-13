@@ -141,7 +141,6 @@ li {
     transition: 0.3 ease;
 }
 .main {
-    background-color: red;
     width: 100%;
     padding-top: 100px;
     height: auto;
@@ -184,7 +183,7 @@ li {
 .hero-background {
     background-image: url(firstcurve.webp);
     width: 100%;
-    height: 550px;
+    height: 500px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -272,7 +271,6 @@ li {
 .human {
     width: 100%;
     height: 800px;
-    background-color: white;
 }
 .human h2 {
     text-align: center;
@@ -294,7 +292,7 @@ li {
 .first-flex-div {
     width: 80%;
     max-width: 1400px;
-    height: 200px;
+    height: 300px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -303,9 +301,9 @@ li {
     gap: 1.5%;
 }
 .flex-img {
-    width: 200px;
+    width: 180px;
     max-width: 400px;
-    height: 45%;
+    height: 28%;
     border: 0.5px solid lightgrey;
     object-fit: contain;
     display: flex;
@@ -314,6 +312,159 @@ li {
     box-shadow: -1px 1px 10px 5px #eaeaea;
 }
 #first-flex-img {
-    width: 60%;
-    height: 50%;
+    width: 70%;
+    height: 45%;
+}
+.card-div {
+    width: 95%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    width: 98%;
+    height: 90%;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-top: 0.5px solid #cecece;
+    border: 0.5px solid lightgrey;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), 0 -4px 10px rgba(0, 0, 0, 0);
+    padding-bottom: 3%;
+}
+/* .curve {
+    background-color: #ebf7e6;
+    width: 98%;
+    position: absolute;
+    height: 100%;
+    border-bottom-left-radius: 89%;
+    border-bottom-right-radius:;
+    left: 5%;
+} */
+.card-img-div {
+    width: 55%;
+    height: 75%;
+    display: flex;
+    position: absolute;
+    margin-top: -8%;
+}
+#card-img {
+    object-fit: contain;
+    margin-top: 12%;
+    height: 88%;
+}
+.card-text {
+    width: 99%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.bi-quote {
+    color:  rgba(1, 118, 211, 1);
+    font-size: 2.5rem;
+    height: 19%;
+}
+.card-text h2 {
+    text-align: left;
+    width: 100%;
+}
+.card-text  h2 {
+    font-size: 1.8rem;
+    height: 720px;
+}
+.card-text h4 {
+    font-size: 1.5rem;
+    color: #001639;
+    display: flex;
+    align-items: center;
+}
+.card-text p {
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+}
+.card-text button {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid rgba(1, 118, 211, 1);
+    color: rgba(1, 118, 211, 1);
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card-text button:hover {
+    border: 2px solid #03234d;
+    color: #03234d;
+    background-color: #eaf5fe;
+    transition: 0.5s ease-in 0.5s ease-out;
+}
+.card-btn {
+    margin-top: 4%;
+    width: 30%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+.question {
+    width: 100%;
+    height: 400px;
+    margin-top: 65px;
+    display: flex;
+}
+.question-flex {
+    width: 94%;
+    height: 83%;
+    margin: 4% auto;
+    display: flex;
+    gap: 3%;
+}
+.question-text {
+    width: 100%;
+    height: 60%;
+    margin-top: 3%;
+}
+.question-text h2 {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    width: 100%;
+    height: 50px;
+    color: #032d60;
+}
+.question-text p {
+    width: 100%;
+    height: 200px;
+    font-size: 1.35rem;
+    display: flex;
+    align-items: center;
+    line-height: 1.7rem;
+}
+.play-image {
+    width: 100%;
+    height: 330px;
+    display: flex;
+}
+#moving-image {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.background2 {
+    background-image: url(1up-what-is-SF-bg.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width:90%;
+    height: 200px;
 }
