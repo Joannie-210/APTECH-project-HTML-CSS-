@@ -29,21 +29,26 @@ body {
 }
 nav {
     width: 100%;
-    height: 65px;
+    height: 63px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 0.5px solid #efefef;
+    border-bottom: 0.1px solid #fefefe;
     position: fixed;
     background-color: white;
     top: 0;
-    z-index: 2;
+    z-index: 99;
 }
 .navbar-cont {
-    width: 98%;
+    width: 97%;
     height: 90%;
     display: flex;
     justify-content: space-between;
+    margin-left: -2%;
+}
+#chevsvg {
+    width: 8px;
+    height: 8px;
 }
 .nav-links {
     width: 50%;
@@ -51,6 +56,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-y: hidden;
 }
 .bi-chevron-down {
     font-size: 0.4rem;
@@ -60,16 +66,21 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    width: 70%;
+    width: 69%;
     height: 80%;
     gap: 25px;
     margin-left: 13%;
-    font-size: 0.9rem;
+    font-size: 0.94rem;
     font-weight: 500;
 }
 .nav-links > .links > li {
     cursor: pointer;
+    display: flex;
+    gap: 2px;
+}
+.nav-links svg {
+    width: 90px;
+    height: 90px;
 }
 li { 
    list-style: none;
@@ -88,17 +99,18 @@ li {
     height: 10px;
 }
 .nav-cta {
-    width: 30%;
+    width: 29%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: -1.5%;
 }
 .nav-cta > .cta {
     display: flex;
     justify-content: center;
     width: 50%;
-    gap: 20px;
-   margin-left: 10%;
+    gap: 15px;
+   margin-left: 15%;
    font-size: 0.9rem;
 }
 .line {
@@ -107,12 +119,14 @@ li {
     background-color: lightgray;
 }
 .nav-cta > button {
-    width: 35%;
-    height: 60%;
+    width: 31%;
+    height: 57%;
     background-color: black;
     border-radius: 5px;
     color: white;
     cursor: pointer;
+    font-size: 0.88rem;
+    font-weight: bold;
 }
 .cta > hr {
     height: 50%;
@@ -120,7 +134,7 @@ li {
 }
 .hero-section {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 43px;
     height: 500px;
     display: flex;
     justify-content: center;
@@ -144,21 +158,24 @@ li {
     font-weight: 600;
     line-height: 4.5rem;
     height: 160px;
+    letter-spacing: -2px;
 }
 .hero-text > h2 {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
     font-weight: 550;
-    height: 70px;
+    height: 60px;
 }
 .hero-text > p {
-    margin-top: 25px;
+    margin-top: 30px auto 60px auto;
     color: grey;
 }
 .hero-btn {
-    width: 70%;
+    width: 75%;
+    height: 90px;
     display: flex;
+    /* align-items: center; */
     gap: 12px;
-    margin-top: 18px;
+    margin-top: -7px;
 }
 .hero-btn > button:first-of-type {
     background-color: var(--free-btn);
@@ -166,17 +183,17 @@ li {
     font-weight: 550;
     width: 45%;
     border: none;
-    height: 50px;
+    height: 45px;
     font-size: 1.0rem;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
 }
 .hero-btn > button:last-of-type {
     background-color: var(--demo-btn);
     width: 50%;
-    height: 50px;
+    height: 45px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     color: var(--free-btn);
     font-size: 1rem;
     font-weight: 550;
@@ -192,8 +209,8 @@ li {
 }
 .teams {
     width: 100%;
-    height: 60px;
-    margin-top: 5px;
+    height: 30px;
+    margin-top: 7px;
     position: relative;
     display: flex;
     gap: 30px;
@@ -204,35 +221,46 @@ li {
     width: 20%; 
     height: 80%;
 }
-#affirm, #toyota, #discord, #figma {
-    width: 90px;
-    height: 90px;
-
+#figma {
+    width: 80px;
+    height: 80px;
 }
+#affirm {
+    width: 75px;
+    height: 75px;
+}
+#netflix {
+    width: 92px;
+    height: 92px;
+}
+#discord {
+    width: 100px;
+    height: 100px;
+}
+
 .hero-img-vid {
     width: 100%;
-    height: 80%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .hero-vid {
-    width: 100%;
-    height: 1000px;
+    width: 92%;
+    height: 100%;
 }
 .img-slide {
     width: 90%;
-    height: 700px;
+    height: 800px;
     display: flex;
    align-items: center;
    justify-content: center;
-   margin: auto;
+   margin: -45px auto 20px auto;
    padding: 0 15px;
-   margin-bottom: 20px;
 }
 #main-img {
-    width: 100%;
-    height: 700px;
+    width: 98%;
+    height: 800px;
     border-radius: 1%;
     border: 0.5px solid lightgrey;
 }
@@ -248,6 +276,7 @@ li {
     justify-content: center;
     align-items: center;
     gap: 1.4%;
+    margin-bottom: 60px;
 }
 .iconflex {
     width: auto;
@@ -278,7 +307,7 @@ li {
 .build-box-div {
     width: 88%;
     height: 70%;
-    margin-top: 6.5%;
+    margin-top: 8.5%;
     display: flex;
     justify-content: space-between;
     gap: 3%;
@@ -328,17 +357,21 @@ li {
 }
 .vid-icon-div {
     width: 30%;
+    height: 80%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-top: 8%;
 }
 .icon-vid {
-    width: 40%;
-    height: 40%;
+    width: 55%;
+    height: 55%;
     object-fit: contain;
     margin-top: 5%;
     margin-bottom: -3%;
+}
+.icon-first {
+    margin-top: -5%;
 }
 .frame2 {
     margin-top: -5%;
@@ -347,15 +380,19 @@ li {
     font-size: 1rem;
     color: grey;
     font-weight: 500;
-    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .vid-icon-div > h3 {
     font-size: 1rem;
     text-align: left;
     width: 100%;
-    height: 28px;
+    height: 30px;
     display: flex;
     align-items: center;
+}
+#flow {
+    padding-top: 10%;
 }
 .screen {
     width: 100%;
@@ -369,10 +406,12 @@ li {
     width: 88%;
     height: 95%;
     border-radius: 10px;
+    margin-top: 20px;
+    /* background-color: red; */
 }
 .sec-icon-div {
     width: 39%;
-    height: 50px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -386,23 +425,27 @@ li {
     width: auto;
     color: grey;
 }
-.sec-icon-img {
-    width: 25px;
-    height: 25px;
+#sec-icon-img {
+    width: 22px;
+    height: 22px;
+}
+.sec2 {
+    margin-top: -1.5%;
+    margin-left: 3.5%;
 }
 .second {
     padding-left: 5%;
 }
 .workflow {
     width: 100%;
-    height: 400px;
+    height: 450px;
     display: flex;
     justify-content: center;
 }
 .workflow-icon-flex {
     width: 88%;
     height: 80%;
-    margin-top: 5.5%;
+    margin-top: 8.5%;
     display: flex;
     justify-content: space-between;
     gap: 3%;
@@ -465,21 +508,21 @@ li {
     align-items: center;
 }
 #roadmap-pic {
-    width: 88%;
-    height: 95%;
-    margin: -2% auto 0 auto;
+    width: 88.5%;
+    height: 98%;
+    margin: 20px auto 10px auto;
     border-radius: 10px;
 }
 .find {
     width: 100%;
-    height: 470px;
+    height: 410px;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 .find-icon-flex {
     width: 88%;
     height: 70%;
-    margin-top: 9%;
+    margin-top: 7%;
     display: flex;
     justify-content: space-between;
     gap: 3%;
@@ -515,6 +558,7 @@ li {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-top: 2%;
     color:  #0a85d1;
     text-decoration: none;
 }
@@ -527,14 +571,871 @@ li {
     height: 100%;
     padding-left: 30px;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
 }
 .vid4, .vid5, .vid6 {
     margin-top: 50%;
+    margin-bottom: 2%;
 }
 .vid6 {
-    margin-top: 35%;
+    margin-top: 50%;
 }
 .vid5{
-    margin-top: 38%;
+    margin-top: 50%;
+}
+.vid-icon-div h3 {
+    margin-top: 1%;
+}
+.vid-icon-div p {
+    width: 100%;
+}
+.acme-div {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+#acme {
+    width: 89%;
+    height: 98%;
+    margin: auto;
+    border-radius: 10px;
+}
+.everything-div {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.everything-flex {
+    width: 65%;
+    height: 65%;
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.everything-card {
+    width: 85%;
+    height: 80%;
+    background-color: #f6f5f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: rotate(-4deg);
+    position: relative;
+}
+.everything-card h2 {
+    font-weight: 500;
+    font-size: 2.7rem;
+    font-family: serif;
+    margin-top: 10%;
+}
+#forbes {
+    width: 60px;
+    height: 80px;
+    object-fit: contain;
+    margin-top: -4%;
+}
+#pin {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    margin-top: -8%;
+}
+.brain-boost {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center; 
+}
+.brain-icon-flex {
+    width: 88%;
+    height: 70%;
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+}
+.brain-text {
+    width: 47%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.brain-text2 {
+    width: 47%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+.brain-text h2 {
+    margin-top: 10%;
+    font-size: 3.8rem;
+    line-height: 4rem;
+    margin-left: -9%;
+}
+.brain-text p {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-weight: 500;
+    font-size: 1.16rem;
+    width: 100%;
+    line-height: 1.4rem;
+}
+.brain-text a {
+    width: 100%;
+    font-size: 1.15rem;
+    font-weight: 600;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 2%;
+    color:  #0a85d1;
+    text-decoration: none;
+}
+.brain-text a:hover {
+    text-decoration: underline;
+    color: #076097;
+}
+.brain-text2 h2 {
+    margin-top: 10%;
+    font-size: 3.8rem;
+    line-height: 4rem;
+    width: 100%;
+}
+.brain-text2 p {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-weight: 500;
+    font-size: 1.16rem;
+    width: 100%;
+    line-height: 1.4rem;
+}
+.brain-text2 a {
+    width: 100%;
+    font-size: 1.15rem;
+    font-weight: 600;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 2%;
+    color:  #0a85d1;
+    text-decoration: none;
+}
+.brain-text2 a:hover {
+    text-decoration: underline;
+    color: #076097;
+}
+.brain-icon-div {
+    width: 54%;
+    height: 100%;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.vid8 {
+    margin-top: -15%;
+    margin-bottom: 2%;
+}
+.vid9 {
+    margin-top: -25%;
+    margin-bottom: 2%;
+}
+.vid10 {
+    margin-top: -2%;
+    margin-bottom: 2%;
+}
+.brain-head {
+   height: 80px;
+   display: flex;
+   align-items: center;
+}
+.brainstorm {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+#brain-storm {
+    width: 88%;
+    height: 98%;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.confluence {
+    margin-left: 15%;
+}
+.template {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: end;
+    margin-bottom: 1.5%;
+}
+.template h2 {
+    width: 85%;
+    text-align: left;
+    font-size: 3.85rem;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+.template-text-div {
+    width: 75%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.template-text-div a {
+    width: 83%;
+    font-size: 1.15rem;
+    font-weight: 600;
+    height: 3px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 2%;
+    color:  #0a85d1;
+    text-decoration: none;
+    margin-left: 4%;
+}
+.template-text-div a:hover {
+    text-decoration: underline;
+    color: #076097;
+}
+.flex-container {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+}
+.flex-box {
+    width: 95%;
+    height: 90%;
+    display: flex;
+    margin-left: 3%;
+}
+.big-box-div {
+    width: 48%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+.big-box {
+    width: 95%;
+    height: 98%;
+    background-color: #f6f5f4;
+    border-radius: 10px;
+    margin-left: 8%;
+    position: relative;
+}
+.small-boxes-div {
+   width: 50%;
+   height: 90%;
+   display: flex;
+   justify-content: center;
+}
+.small-boxes {
+    width: 90%;
+    height: 98%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.small-box {
+    width: 46.5%;
+    height: 30%;
+    padding-left: 4%;
+    border-radius: 10px;
+    background-color: #f6f5f4;
+    cursor: pointer;
+}
+.small-box:hover {
+    background-color: #f1efee;
+    transition: 0.3s ease;
+}
+.icon-text-arrow {
+    margin: auto;
+    width: 90%;
+    height: 130px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.icon-text-arrow a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    gap: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+}
+.book {
+ width: 50px;
+ height: 50px;
+}
+#wiki-temp {
+    width: 95%;
+    height: 68%;
+    position: absolute;
+    top: 165px;
+    right: 0;
+    z-index: 2;
+    border-top-left-radius: 10px;
+    border: 0.5px solid #eaeaea;
+}
+#wiki-temp2 {
+    width: 91%;
+    height: 68%;
+    position: absolute;
+    top: 151px;
+    right: 0;
+    object-fit: contain;
+    z-index: 1;
+    border: 0.5px solid #eaeaea;
+    border-top-left-radius: 10px;
+    background-color: white;
+}
+#wiki-temp3 {
+    width: 93%;
+    height: 68%;
+    position: absolute;
+    /* top: 30%; */
+    top: 158px;
+    right: 0;
+    object-fit: cover;
+    z-index: 1;
+    border-top-left-radius: 10px;
+    border: 0.5px solid #eaeaea;
+}
+.need {
+    width: 100%;
+    height: 650px;
+}
+.need-text-div {
+    width: 45%;
+    height: 30%;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    margin-left: 6.5%;
+}
+.need-text-div h2 {
+    font-size: 3.6rem;
+}
+.sec-flex-container {
+    width: 88%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4%;
+    padding-top: 2.5%;
+}
+.uses {
+    width: 240px;
+    height: 45%;
+    background-color: white;
+}
+.uses a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+}
+.uses a:hover {
+    color: grey;
+    transition: 0.3s ease;
+}
+.uses h2 {
+    padding-left: 3.8%;
+}
+.uses p {
+    width: 100%;
+    padding-left: 4%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: grey;
+    margin-top: 5px;
+}
+#use-icon {
+    width: 80px;
+    height: 80px;
+}
+.started {
+    width: 100%;
+    height: 900px;
+}
+.started h2 {
+    font-size: 3.8rem;
+    margin-left: 8%;
+    height: 180px;
+    display: flex;
+    align-items: end;
+}
+.third-flex-cont {
+    margin: -1px auto 0px auto;
+    width: 97%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.third {
+    width: 43.2%;
+    height: 82%;
+    background-color: #f6f5f4;
+    border-radius: 10px;
+}
+.notion-div {
+    margin-left: 6%;
+    margin-top: 4%;
+    width: 50%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.notion-div h2 {
+    font-size: 2.9rem;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -0.1%;
+    font-weight: 650;
+}
+.last-btn {
+   height: 45%;
+   display: flex;
+   align-items: start;
+   margin-top: 20px;
+   width: 100%;
+   height: 100px;
+   display: flex;
+   gap: 10px;
+}
+.last-btn button:first-child {
+    width: 41%;
+    height: 55%;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: var(--free-btn);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 2% 0;
+}
+.last-btn button:first-child:hover {
+    background-color: var(--free-btn-hover);
+    transition: 0.3s ease;
+}
+.last-btn button:last-child {
+    width: 56%;
+    height: 55%;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    padding: 2% 0;
+} 
+.last-btn button:last-child:hover {
+    background-color: #f1efee;
+    transition: 0.3s ease;
+}
+.div2 {
+    width: 65%;
+}
+.btn2 button:first-child {
+  width: 30%;
+}
+.btn2 button:last-child {
+    width: 45%;
+}
+#notionapp, #notioncal {
+    width: 100%;
+    height: 62.5%;
+    /* position: absolute; */
+    object-fit: contain;
+    margin-top: 13px;
+    margin-left: 15.5px;
+}
+footer {
+    width: 100%;
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-flex {
+    width: 83%;
+    height: 90%;
+    display: flex;
+    gap: 48px;
+}
+.notion {
+    width: 18%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1%;
+}
+
+.footer-flex .notion svg {
+    width: 140px;
+    height: 140px;
+    margin-top: -5px;
+}
+.small-icon-flex {
+    width: 100%;
+    height: 40px;
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.small-icon-flex svg {
+    opacity: 0.6;
+}
+.english-flex {
+    margin-top: 50px;
+    width: 62%;
+    height: 35px;
+    border: 1px solid #e1e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+.english-flex svg {
+    margin-top: 30px;
+    opacity: 0.8;
+}
+.english-flex h4 {
+    margin-top: -4px;
+    color: #2a2a2a;
+    opacity: 0.9;
+}
+.notion p {
+    width: 100%;
+    height: 26px;
+    font-size: 0.88rem;
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+}
+.notion h5 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+.offer {
+    width: 15%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 11.11px;
+    padding-left: 2.5%;
+    padding-top: 2%;
+}
+.off1 {
+    padding-left: 3%;
+}
+.offer h4 {
+    margin-top: -115px;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+.off2 h4 {
+    margin-top: -145px;
+}
+.off3 h4 {
+    margin-top: -60px;
+}
+
+.off4 {
+    padding-left: 2%;
+}
+.off4 h4 {
+    margin-top: -60px;
+}
+.off4 p:nth-last-of-type(2) {
+    margin-bottom: 88px;
+}
+.off4 .explore {
+    color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+}
+.offer p {
+    font-size: 0.92rem;
+    color: black;
+    opacity: 0.99;
+    font-weight: 400;
+}
+@media screen and (max-width: 1300px) {
+    .nav-links {
+        width: 60%;
+    }
+    .nav-links .links {
+        width: 75%;
+    }
+    .nav-cta {
+        width: 33%;
+    }
+    .nav-cta > button {
+        font-size: 0.8rem;
+    }
+    .nav-cta .cta li {
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .hero-vid {
+        margin-top: 90px;
+    }
+    .hero-btn {
+        margin-top: 15px;
+    }
+    .img-slide {
+        height: 600px;
+    }
+    #main-img {
+        height: 600px;
+        object-fit: cover;
+    }
+    .teams {
+        margin-top: 4px;
+    }
+    .build {
+        height: 450px;
+    }
+    .build-box-div {
+        margin-top: 13%;
+        height: 75%;
+    }
+    .build-box {
+        gap: 3%;
+    }
+    .build-box h2 {
+        font-size: 4rem;
+    }
+    .feat {
+        padding-top: 8%;
+    }
+    .icon-first {
+        margin-top: 10%;
+    }
+    .frame2 {
+        margin-top: -2%;
+    }
+    .vid-icon-div h3 {
+        height: 40px;
+    }
+    .frame {
+        margin-top: -5%;
+    }
+    .screen-mobile {
+        height: 85%;
+        border-radius: 25px;
+        margin-top: 2px;
+    }
+    .sec-icon-div {
+        width: 45%;
+    }
+    .workflow {
+        height: 480px;
+    }
+    .vid-icon-2 {
+        margin-top: 15%;
+        width: 25%;
+    }
+    #flow {
+        margin-top: 30%;
+    }
+    #flow2 {
+        margin-top: 80%;
+    }
+    #flow3 {
+        margin-top: 18%;
+    }
+    .autom h3 {
+        margin-top: -35%;
+    }
+    .task > h3 {
+        margin-top: -30px;
+    }
+    .workflow-text {
+        margin-top: 30px;
+    }
+    .workflow-text h2 {
+        font-size: 4rem;
+        margin-top: 6%;
+    }
+    .workflow-text p {
+        height: 100px;
+    }
+    .roadmap {
+        height: 590px;
+    }
+    #roadmap-pic {
+        margin-top: -30px;
+        height: 88.5%;
+        border-radius: 15px;
+    }
+    .sec1 {
+        margin-top: -30px;
+        align-items: start;
+    }
+    .find {
+        height: 480px;
+    }
+    .find-icon-flex {
+        margin-top: 8.8%;
+        height: 80%;
+    }
+    .find-div h3 {
+        margin-top: -38%;
+    }
+    .vid5, .vid6{
+        margin-top: 60%;
+        margin-bottom: 0;
+    }
+    .vid4 {
+        margin-top: 80%;
+        margin-bottom: 12%;
+    }
+    .sec2 {
+        width: 48%;
+    }
+    .acme-div {
+        height: 450px;
+        width: 98%;
+    }
+    #acme {
+        border-radius: 15px;
+    }
+    .everything-div {
+        height: 520px;
+    }
+    .everything-card {
+        height: 65%;
+    }
+    .brain-icon-flex {
+      height: 75%;  
+    }
+    .brain-boost {
+        height: 380px;
+    }
+    .brain-text2 {
+        display: block;
+    }
+    .brain-text2 h2 {
+        font-size: 4.2rem;
+    }
+    .brain-text2  {
+        font-size: 1.3rem;
+        line-height: 3rem;
+    }
+    .brain-text {
+        display: none;
+    }
+    .boost-div .brain-head {
+        margin-top: -20%;
+    }
+    .boost-div .brain-head2 {
+        margin-top: -14%;
+    }
+    .vid8 {
+        margin-top: -48%;
+    }
+    .vid9 {
+        margin-top: -40%;
+    }
+    #brain-storm {
+        object-fit: contain;
+        border-radius: 20px;
+    }
+    .brainstorm {
+        height: 500px;
+    }
+    .flex-container {
+        width: 95%;
+        height: 750px;
+    }
+    .icon-text-arrow a {
+        width: 100%;
+        align-items: flex-end;
+        height: 60px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .icon-text-arrow a .bi-arrow-right {
+        font-family: 1rem;
+    }
+    .doc-div {
+        background-color: red;
+    }
+    #wiki-temp {
+        margin-top: 24%;
+    }
+    #wiki-temp2 {
+        top: 40.5%;
+    }
+    #wiki-temp3 {
+        top: 42.5%;
+    }
+    #wiki-temp,  #wiki-temp2, #wiki-temp3 {
+        height: 55%;
+    }
+    .uses {
+        width: 200px;
+    }
+    .div2 {
+        width: 78%;
+        background-color: red;
+        height: 36%;
+    }
 }
