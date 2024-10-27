@@ -1870,6 +1870,16 @@ footer {
     .utility, .navbar-links, .navbar-cta {
         display: none;
     }
+    .play-button-div2 {
+    margin-left: -10%;
+    }
+    .vid-img {
+    object-fit: contain;
+    }
+    .but-div {
+    height: 70%;
+    background-color: red;
+    }
     .hamburger {
         display: block;
         width: 15%;
@@ -2002,6 +2012,70 @@ footer {
     width: 48%;
     }
     .text-div h3 {
-    background-color: red;
+    height: 70px;
+    margin-bottom: 20px;
+    }
+    .customer-result h5 {
+    font-size: 1.4rem;
+    }
+    .roi-but button {
+    width: 40%;
+    }
+    .connect-flex {
+    gap: 40px;
+    }
+    .last-btn button:first-child {
+    width: 38%;
+    }
+    .last-btn button:last-child {
+    width: 48%;
+    }
+    .og-footer {
+    display: none;
+    } 
+    .alt-footer {
+    display: block;
+    height: 600px;
+    }
+    .footer-div {
+    width: 100%;
+    height: 90%;
+    }
+    .ft-span {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    border-bottom: 1px solid #7691ad;
+    line-height: 3rem;
+    }
+    .footer-div h5 {
+     color: white;
+     font-size: 1rem;
+     font-family: lexend deca;
+    }
+    .ft-span .bi {
+    color: white;
+    font-size: 1.5rem;
+    } 
+    .line-icon-div {
+    margin: 30px auto 5px auto;
+    }
+    .footer-img {
+    width: 50%;
+    height: 70px;
+    margin: 40px auto 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    }
+    #getone, #gettwo {
+    width: 35%;
+    height: 70%;
+    }
+    .last-div {
+    margin: auto;
+    width: 70%;
     }
 }
