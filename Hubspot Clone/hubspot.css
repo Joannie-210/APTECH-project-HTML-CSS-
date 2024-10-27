@@ -2004,6 +2004,13 @@ footer {
     font-size: 1rem;
     width: 100%;
     }
+    .but-div {
+    background-color: #bef1ec;
+    }
+    .but-div button {
+    width: 80%;
+    height: 70%;
+    }
     .sol-flex {
      flex-wrap: wrap;
      height: auto;
@@ -2077,5 +2084,157 @@ footer {
     .last-div {
     margin: auto;
     width: 70%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .background {
+    height: 850px;
+    }
+    .hero-text {
+    padding-left: 3%;
+    }
+    .hero-img {
+    flex-direction: column;
+    }
+    .back-img-div {
+     margin: -300px auto 0 auto;
+     width: 70%;
+     height: 70%;
+    }
+    .hero-text h1 {
+    font-size: 2.3rem;
+    height: 70px;
+    }
+    .second-div h3 {
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
+    }
+    .logo-div2 {
+     width: 100%;
+    }
+    .logo-div2 img {
+    width: 90px;
+    height: 70px;
+    }
+    .vid-background {
+    height: 700px;
+    }
+    #vid-img {
+    object-fit: contain;
+    }
+    .play-button-div {
+    width: 20%;
+    height: 10%;
+    }
+    .drive-button {
+    flex-direction: column;
+    width: 95%;
+    justify-content: flex-start;
+    align-items: start;
+    margin-top: 20px;
+    }
+    .frontoffice h2 {
+        width: 75%;
+    }
+    .frontoffice p {
+        width: 78%;
+    }
+    .frontoff-btn > button:first-child {
+        width: 45%;
+    }
+    .frontoff-btn button:last-child {
+        width: 60%;
+    }
+    .first-grid-container {
+        padding: 0 2% 0 2%;
+        height: 2500px;
+    }
+    .grid-item {
+        padding: 30px auto;
+    }
+    .grid-item button {
+        margin-top: 70px;
+    }
+    .item7 {
+        padding: 60px 8px 35px 8px;
+        margin: 0 auto 80px 0;
+    }
+    .item7 button {
+        width: 90%;
+        margin: auto;
+    }
+    .breeze {
+        height: 350px;
+    }
+    .flex-row > p,  .flex-row2 > p {
+        font-size: 0.5rem;
+    }
+    .span-flex-img {
+        width: 100%;
+    }
+    #fleximg {
+        width: 40px;
+        height: 40px;
+    }
+    .span-grid-text h2 {
+        font-size: 1rem;
+    }
+    .product p {
+        line-height: 1.5rem;
+        text-align: center;
+        width: 90%;
+    }
+    .but-div {
+        margin-top: -30px;
+        width: 40%;
+        height: 30%;
+    }
+    .solution h2 {
+        font-size: 1.7rem;
+    }
+    .solution p {
+        font-size: 1rem;
+    }
+    .sol-flex {
+        justify-content: center;
+        gap: 20px;
+        padding: 2% 0;
+    }
+    .card {
+        width: 280px;
+    }
+    .whats-new {
+        height: 700px;
+    }
+    #brand-img {
+        object-fit: contain;
+    }
+    .play-button-div2 {
+        width: 20%;
+        margin-left: -3%;
+    }
+    .text-div {
+        height: 100%;
+    }
+    .text-div h3 {
+        margin-bottom: 40px;
+        width: 90%;
+    }
+    .text-div p {
+        margin-bottom: 30px;
+    }
+    .whats-new-div {
+        height: 90%;
+    }
+    .customer-result {
+        height: auto;
+    }
+    .wnew-btn button {
+        height: 70%;
+        width: 45%;
+    }
+    .customer-flex {
+        flex-wrap: wrap;
     }
 }
