@@ -255,21 +255,38 @@ a {
   }
   .navbar-logo {
     position: relative;
+    
   }
-  .navbar-logo img {
+  .navbar-logo  {
+    content: url(hubspotologo.svg);
     height: 72px;
-    width: 40%;
-    margin-left: 2%;
+    width: 9%;
+    margin-left: 1%;
+    animation: newLogo 0.1s ease forwards;
+    animation-delay: 5s; 
   }
-  #logo-icon {
-    width: 35px;
-    height: 35px;
+  @keyframes newLogo {
+    from {
+      content: url(hubspotologo.svg);
+      height: 72px;
+      width: 9%;
+    }
+    to {
+      content: url(logo-icon.svg);
+      height: 35px;
+      width: 35px;
+      margin-left: 2%;
+    }
+  }
+  #logoicon {
+    width: 15px;
+    height: 15px;
     position: absolute;
     top: 30%;
     left: 10%;
     opacity: 0;
-    animation-name: logo-icon;
-    }
+}
+
   .navbar-links {
     list-style: none;
     display: flex;
@@ -277,8 +294,17 @@ a {
     position: absolute;
     left: 13%;
     width: 42%;
-    animation: moveNavLinks 0.3s forwards;
+    animation: navLinks 0.5s ease forwards;
+    animation-delay: 5s;
+}
+@keyframes navLinks {
+  from {
+    transform:  translateX(0px);
   }
+  to {
+    transform: translateX(-55px);
+  }
+}
    .navbar-links li {
     display: inline-block;
     font-size: 1rem;
@@ -1556,7 +1582,6 @@ sup {
 .grow-text-but {
   width: 50%;
   height: 80px;
-  display: block;
 }
 .grow-text-but > h2 {
   font-family: lexend deca;
@@ -1605,6 +1630,9 @@ sup {
   border: 2px solid var(--buttonhover);
   transition: 0.4s ease;
   cursor: pointer;
+}
+.last-btn {
+  height: 50%;
 }
 footer {
   width: 100%;
@@ -2118,7 +2146,7 @@ footer {
     height: 70px;
     }
     .vid-background {
-    height: 700px;
+    height: 710px;
     }
     #vid-img {
     object-fit: contain;
@@ -2133,6 +2161,7 @@ footer {
     justify-content: flex-start;
     align-items: start;
     margin-top: 20px;
+    gap: 10px;
     }
     .frontoffice h2 {
         width: 75%;
@@ -2207,22 +2236,28 @@ footer {
     .whats-new {
         height: 700px;
     }
+    .whats-new h2 {
+      margin-top: 90px;
+    }
     #brand-img {
         object-fit: contain;
     }
     .play-button-div2 {
         width: 20%;
         margin-left: -3%;
+        height: 12%;
     }
     .text-div {
         height: 100%;
     }
     .text-div h3 {
-        margin-bottom: 40px;
+        margin-bottom: 70px;
         width: 90%;
+        font-size: 1.7rem;
     }
     .text-div p {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
+        font-size: 1.1rem;
     }
     .whats-new-div {
         height: 90%;
@@ -2234,7 +2269,309 @@ footer {
         height: 70%;
         width: 45%;
     }
+    .customer-result {
+      height: 900px;
+    }
     .customer-flex {
         flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+        height: auto;
+        margin-bottom: 50px;
     }
+    .achieve {
+      width: 49%;
+      height: 280px;
+    }
+    .achieve img {
+      height: 40%;
+      width: 40%;
+      margin-top: 2%;
+    }
+    .roi-but button {
+      width: 55%;
+    }
+    .customer-result h5 {
+      font-size: 1.2rem;
+      width: 80%;
+      margin: auto;
+    }
+    .customer-result h3 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+    }
+    .connect-flex {
+      flex-direction: column;
+      gap: 15px;
+      width: 95%;
+      padding-top: 0;
+    }
+    .connect {
+      height: 1100px;
+      align-items: center;
+    }
+    .connect-card {
+      height: 50%;
+      width: 95%;
+    }
+    .connect2-flex {
+      padding: 40px 7px 80px 7px;
+      justify-content: center;
+      gap: 30px;
+    }
+    #app-badge {
+      width: 100px;
+      object-fit: contain;
+    }
+    .grow-text-but .last-btn {
+      flex-direction: column;
+      width: 100%;
+      height: 90%;
+      gap: 20px;
+      padding-left: 1%;
+      justify-content: flex-start;
+      align-items: start;
+    }
+    .last-btn button:first-child, .last-btn button:last-child {
+      /* position: absolute; */
+      width: 60%;
+      height: 30%;
+      right: 10%;
+      margin-left: -2%;
+  
+    }
+    .last-btn button:last-child {
+      width: 75%;
+    }
+    .grow {
+      padding-left: 1%;
+    }
+    .grow-text-but {
+      width: 70%;
+      height: 100%;
+    }
+    #afro {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .afro-div {
+      height: 100%;
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .last-div {
+      width: 100%;
+    }
+    .footer-img {
+      width: 70%;
+    }
+    .getone, .gettwo {
+      object-fit: contain;
+    }
+}
+@media screen and (max-width: 600px) {
+  .hero-text {
+    width: 100%;
+    height: 70%;
+    padding: 0;
+    text-align: center;
+  }
+  .hero-text h1 {
+    text-align: center;
+    font-size: 2.1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.hero-text p:first-of-type {
+  margin-bottom: 30px;
+}
+  .hero-button {
+    flex-direction: column;
+    width: 100%;
+    height: 30%;
+    margin-bottom: 20px;
+  }
+  .hero-demo, .hero-free {
+    width: 90%;
+  }
+  .back-img-div {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .vid-flex {
+    flex-direction: column;
+  }
+  .vid-background {
+    height: 800px;
+  }
+  .vidtext-div {
+    width: 100%;
+    padding: 0;
+    height: 40%;
+  }
+  .vid-img {
+    width:100%;
+    object-fit: cover;
+  }
+  .play-button-div {
+    width: 15%;
+    height:25%;
+  }
+  .drive {
+    width: 100%;
+    padding: 0 2%;
+  }
+  .drive-button {
+    justify-content: center;
+    align-items: center;
+    height: 27%;
+    margin: 30px auto;
+  }
+  .drive h2 {
+    margin-bottom: 2px;
+    height: 70px;
+  }
+  .drive p:first-of-type {
+    height: 180px;
+    margin-bottom: 20px;
+  }
+  .drive p:last-of-type {
+    height: 80px;
+  }
+  .frontoffice h2 {
+   font-size: 1.5rem;
+   width: 100%;
+   text-align: center;
+  }
+  .frontoff-btn {
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .frontoff-btn button:first-child, .frontoff-btn button:last-child {
+    border-radius: 8px;
+  }
+  .first-grid-container {
+    height: 4000px;
+  }
+  .grid-item {
+    width: 100%;
+  }
+  .span-grid-text p, h2 {
+    padding: 0 2%;
+    margin-bottom: 20px;
+  }
+  .flex-row p, .flex-row2 p {
+    font-size: 0.7rem;
+  }
+  .product {
+    width: 100%;
+  }
+  .product p {
+    width: 100%;
+  }
+  .card {
+    width: 95%;
+  }
+  .whats-new {
+    height: 900px;
+  }
+  .whats-new-div {
+    flex-direction: column;
+  }
+  .video-div, .text-div {
+    width: 100%;
+  }
+  .play-button-div2 {
+    width: 15%;
+    height: 15%;
+  }
+  .text-div {
+    padding-left: 2%;
+  }
+  .text-div h3 {
+    margin-bottom: 30px;
+  }
+  .text-div p {
+    margin-bottom: 20px;
+  }
+  .wnew-btn {
+    height: 60%;
+    margin-top: 60px;
+    justify-content: center;
+  }
+  .wnew-btn button {
+    height: 75px;
+  }
+  .customer-result {
+    height: 1300px;
+ }
+ .achieve {
+  width: 100%;
+}
+.customer-result h5 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.roi-but button {
+  width: 100%;
+}
+ .connect-card {
+  width: 100%;
+ }
+ .connect1 h2 {
+  text-align: center;
+ }
+ .connect2-flex {
+  width: 100%;
+ }
+ .grow-flex {
+  flex-direction: column-reverse;
+ }
+ .grow {
+  height: 700px;
+ }
+ .afro-div {
+  width: 100%;
+  height: 100%;
+ } 
+ .grow-text-but h2 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  height: 50px;
+  width: 300px;
+  text-align: center;
+ }
+ .grow-flex {
+  height: 100%;
+  padding: 0;
+ }
+  .last-btn button:first-child, .last-btn button:last-child {
+    margin: 0 auto;
+  }
+  .line-icon-div {
+    padding-right: 200px;
+    gap: 20px;
+  }
+  .social img {
+    width: 22px;
+    height: 22px;
+  }
+  .footer-img {
+    width: 100%;
+  }
+  .getone, .gettwo {
+    object-fit: cover;
+  }
+  .last-text h4 {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  
 }
